@@ -1,5 +1,5 @@
 import React from 'react'
-import { MY_STORE_NAME, NAV_HOME, NAV_STORE, NAV_CONTACT_US, STORE_LOGO } from '../utils/constants'
+import { MY_STORE_NAME, NAV_HOME, NAV_STORE, NAV_ABOUT_US,NAV_FEEDBACK, STORE_LOGO } from '../utils/constants'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -12,9 +12,10 @@ const Header = () => {
         <div className='nav-container'>
             <div className='nav-list'>
                 <ul>
-                    <li>{NAV_HOME}</li>
-                    <li>{NAV_STORE}</li>
-                    <li>{NAV_CONTACT_US}</li>
+                    <li><Link to="/">{NAV_HOME}</Link></li>
+                    <li><Link to="StarEssentials">{NAV_STORE}</Link></li>
+                    <li><Link to="AboutUs">{NAV_ABOUT_US}</Link></li>
+                    <li><Link to="Feedback">{NAV_FEEDBACK}</Link></li>
                 </ul>
             </div>
         </div>
