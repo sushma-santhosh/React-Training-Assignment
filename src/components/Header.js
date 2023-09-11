@@ -1,6 +1,8 @@
 import React from 'react'
 import { MY_STORE_NAME, NAV_HOME, NAV_STORE, NAV_ABOUT_US,NAV_FEEDBACK, STORE_LOGO } from '../utils/constants'
 import { Link } from 'react-router-dom'
+import withLogger from './withLogger';
+
 
 const Header = () => {
   return (
@@ -23,4 +25,5 @@ const Header = () => {
   )
 }
 
-export default Header
+//export default Header
+export default withLogger(Header);

@@ -7,7 +7,6 @@ import StarEssentials from './StarEssentials'
 import AboutUs from './AboutUs'
 import Feedback from './Feedback'
 
-
 const App = () => {
   return (
     <Fragment>

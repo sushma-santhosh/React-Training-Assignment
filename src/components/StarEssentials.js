@@ -1,4 +1,5 @@
 import { Navigate } from "react-router-dom";
+import withLogger from './withLogger'
 const StarEssentials = ()=>{
 return(
     <>
@@ -7,4 +8,4 @@ return(
 )
 }
 
-export default StarEssentials;
+export default withLogger(StarEssentials);

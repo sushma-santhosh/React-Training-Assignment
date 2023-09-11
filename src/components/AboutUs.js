@@ -1,3 +1,5 @@
+import withLogger from "./withLogger";
+
 const AboutUs = () => {
 return(<>
 <div>
@@ -14,4 +16,4 @@ Shopping with us allows you to investigate an entirely different universe of inf
 )
 }
 
-export default AboutUs;
+export default withLogger(AboutUs);
